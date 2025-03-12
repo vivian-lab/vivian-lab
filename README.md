@@ -21,7 +21,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 
 
-[linkedin]: (https://www.linkedin.com/in/vivian-okpala/)
+[linkedin]:https://www.linkedin.com/in/vivian-okpala
 
 <!--
 <img width="35" alt="image" src="https://github.com/user-attachments/assets/2f41c7cd-5ea8-4475-b451-a37161b6c3fb"> 
