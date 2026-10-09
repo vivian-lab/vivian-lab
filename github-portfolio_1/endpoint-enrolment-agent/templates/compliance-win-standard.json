@@ -1,0 +1,8 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "displayName": "CP-Windows-Standard",
+  "passwordRequired": true,
+  "bitLockerEnabled": true,
+  "secureBootEnabled": true,
+  "osMinimumVersion": "10.0.22631.0"
+}

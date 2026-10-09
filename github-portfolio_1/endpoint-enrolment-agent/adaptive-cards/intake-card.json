@@ -1,0 +1,44 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    { "type": "TextBlock", "text": "New Endpoint Enrolment Request", "weight": "Bolder", "size": "Medium" },
+
+    { "type": "TextBlock", "text": "Tenant ID (GUID)", "wrap": true },
+    { "type": "Input.Text", "id": "tenantId", "placeholder": "00000000-0000-0000-0000-000000000000" },
+
+    { "type": "TextBlock", "text": "Licensing context", "wrap": true },
+    { "type": "Input.Text", "id": "licensingContext", "placeholder": "e.g. M365 E3" },
+
+    { "type": "TextBlock", "text": "Device ownership", "wrap": true },
+    { "type": "Input.ChoiceSet", "id": "deviceOwnership", "style": "compact", "value": "Corporate",
+      "choices": [
+        { "title": "Corporate", "value": "Corporate" },
+        { "title": "BYOD", "value": "BYOD" }
+      ] },
+
+    { "type": "TextBlock", "text": "Windows version", "wrap": true },
+    { "type": "Input.ChoiceSet", "id": "windowsVersion", "style": "compact", "value": "Win11 24H2",
+      "choices": [
+        { "title": "Windows 11 23H2", "value": "Win11 23H2" },
+        { "title": "Windows 11 24H2", "value": "Win11 24H2" }
+      ] },
+
+    { "type": "TextBlock", "text": "Target Entra group ID", "wrap": true },
+    { "type": "Input.Text", "id": "targetGroupId", "placeholder": "group object id" },
+
+    { "type": "TextBlock", "text": "Compliance profile", "wrap": true },
+    { "type": "Input.ChoiceSet", "id": "complianceProfile", "style": "compact", "value": "Standard",
+      "choices": [
+        { "title": "Standard", "value": "Standard" },
+        { "title": "High", "value": "High" }
+      ] },
+
+    { "type": "TextBlock", "text": "Required apps (one per line)", "wrap": true },
+    { "type": "Input.Text", "id": "appList", "isMultiline": true }
+  ],
+  "actions": [
+    { "type": "Action.Submit", "title": "Submit request" }
+  ]
+}

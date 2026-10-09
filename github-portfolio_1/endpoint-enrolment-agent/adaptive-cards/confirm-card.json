@@ -1,0 +1,19 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    { "type": "TextBlock", "text": "Please confirm your request", "weight": "Bolder", "size": "Medium" },
+    { "type": "FactSet", "facts": [
+      { "title": "Tenant",     "value": "${tenantId}" },
+      { "title": "Ownership",  "value": "${deviceOwnership}" },
+      { "title": "Windows",    "value": "${windowsVersion}" },
+      { "title": "Group",      "value": "${targetGroupId}" },
+      { "title": "Compliance", "value": "${complianceProfile}" }
+    ] }
+  ],
+  "actions": [
+    { "type": "Action.Submit", "title": "Confirm", "data": { "choice": "confirm" } },
+    { "type": "Action.Submit", "title": "Edit",    "data": { "choice": "edit" } }
+  ]
+}
