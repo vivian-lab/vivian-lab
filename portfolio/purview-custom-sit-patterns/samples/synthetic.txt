@@ -1,0 +1,16 @@
+SYNTHETIC TEST DATA - every identifier below is made up.
+
+Customer onboarding note
+National ID 12345678 was verified at the branch.
+Passport no AK0123456, expires next year.
+Card number: 4111 1111 1111 1111 (public test number)
+
+Subscriber record
+Omang: 123419876
+IMSI 652010123456789
+CDR calling number +267 71 234 567
+
+Noise that must NOT match
+Invoice 12345678 was paid.
+Order AK0123456 shipped.
+Reference 4111111111111112 failed validation.
